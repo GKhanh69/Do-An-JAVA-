@@ -1,0 +1,394 @@
+.avatar {
+    width: 80px;
+    /* Điều chỉnh kích thước ô tròn theo mong muốn */
+    height: 80px;
+    /* Điều chỉnh kích thước ô tròn theo mong muốn */
+    border-radius: 50%;
+    /* Để làm cho ô tròn, sử dụng giá trị 50% cho border-radius */
+    overflow: hidden;
+    /* Ẩn phần nội dung vượt ra ngoài khu vực ô tròn */
+}
+
+.icon {
+    font-size: 20px;
+    /* Đặt kích thước của icon */
+}
+
+.image {
+    width: 20px;
+    /* Đặt kích thước của hình ảnh */
+    height: 20px;
+    /* Đặt kích thước của hình ảnh */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Để hình ảnh avatar bên trong ô tròn tự động thích nghi với kích thước của ô tròn */
+}
+
+
+.logotext {
+    float: left;
+    margin-right: 10px;
+}
+
+.btn-outline-dark:hover {
+    color: #fff;
+    /* Màu văn bản khi di chuột qua */
+    background-color: #343a40;
+    /* Màu nền khi di chuột qua */
+}
+
+
+.btn {
+    width: 100px;
+    /* Đổi kích thước theo nhu cầu của bạn */
+    height: 40px;
+    /* Đổi kích thước theo nhu cầu của bạn */
+}
+
+.sign {
+    align-items: center;
+}
+
+/* Add a black background color to the top navigation bar */
+/* Hiệu ứng xuất hiện menu mượt mà */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -10px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Chỉnh màu chữ và biểu tượng mũi tên */
+.navbar-nav .nav-item.dropdown .nav-link {
+    color: #f11b04;
+}
+
+.navbar-nav .nav-item.dropdown .nav-link i {
+    color: #f11b04;
+    margin-right: 5px;
+}
+
+/* Khoảng cách giữa các mục */
+.navbar-nav .nav-item.dropdown .dropdown-item {
+    padding: 5px;
+}
+
+/* Điều chỉnh màu nền khi hover */
+.navbar-nav .nav-item.dropdown .dropdown-item:hover {
+    background-color: #f11b04;
+    color: #fff;
+}
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    /* Điều chỉnh kích thước tổng thể của card */
+}
+
+.currency {
+    font-size: 0.8em;
+    /* Đặt kích thước nhỏ hơn */
+    vertical-align: super;
+    /* Nói cho ký tự "đ" nổi lên phía trên */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 200px;
+    /* Điều chỉnh kích thước ảnh truyện tranh */
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1rem;
+    /* Điều chỉnh kích thước tiêu đề */
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    /* Điều chỉnh kích thước văn bản nội dung */
+    color: #777;
+}
+
+.text-warning {
+    color: #FFC107;
+}
+
+.card-footer {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+.btn {
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #1d2124;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+
+.text-warning {
+    color: #FFC107;
+    /* Màu vàng cho sao */
+}
+
+.star {
+    font-size: 1.5rem;
+    /* Điều chỉnh kích thước của sao */
+    margin: 0 2px;
+    /* Khoảng cách giữa các sao */
+    cursor: pointer;
+    /* Đổi con trỏ thành bàn tay khi di chuột qua sao */
+}
+
+.highlight-text {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    animation: highlightText 3s ease-in-out infinite;
+    color: #FFC107;
+}
+
+@keyframes highlightText {
+
+    0%,
+    100% {
+        transform: skewX(-5deg);
+    }
+
+    50% {
+        transform: skewX(5deg);
+    }
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #777;
+    color: #fff;
+    border: 1px solid lch(lightness chroma hue);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-container input[type="search"] {
+    padding-right: 40px;
+    /* Để tạo khoảng trống cho biểu tượng tìm kiếm */
+    border: silver;
+    /* Loại bỏ đường viền */
+
+    /* Loại bỏ nền */
+}
+
+.search-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%) scale(1);
+    /* Kích thước ban đầu */
+    transition: transform 0.3s;
+    /* Hiệu ứng thời gian 0.3 giây */
+    color: #511f3a;
+    cursor: pointer;
+}
+
+.search-container input[type="search"]:focus+i {
+    transform: translateY(-50%) rotate(45deg) scale(1.2);
+    /* Hiệu ứng uốn lượn */
+}
+
+.search-container i:hover {
+    color: #ff0000;
+    /* Màu khi hover */
+}
+
+#scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff;
+    color: #fff;
+    width: 1000px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.button-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.button {
+    background-color: hsl(from color h s l);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 40px;
+    /* Điều chỉnh giá trị margin-right tại đây */
+    transition: transform 0.2s;
+    margin-top: 20px;
+}
+
+.button:hover {
+    transform: translateX(5px);
+}
+
+.button::before {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: yellow;
+    transition: width 0.2s;
+}
+
+.button:hover::before {
+    width: 100%;
+}
+
+.button span {
+    position: relative;
+    z-index: 1;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 70px;
+    border-radius: 40%;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
